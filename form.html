@@ -1,0 +1,83 @@
+
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>online form</title>
+</head>
+<style>
+        .div-form {
+                background-color: rgba(141, 192, 104, 0.494);
+                color: red;
+                font-family: Arial;
+                font-size: 1rem;
+                padding: 2px;
+                margin: 2px;
+                border: 2px solid rgb(122, 78, 78);
+                align-items: center;
+                display: grid;
+                justify-content: space-evenly;
+        }
+        .div-fire {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                margin: 2px;
+                padding: 2px;
+                border: 2px solid rgb(46, 46, 119);
+        }
+</style>
+
+<body>
+        <form action="/action_ppage.php" method="post" autocomplete="on">
+                <div class="div-form">
+                        <fieldset>
+                                <legend>Contact Information</legend>
+                                <label for="name">Name</label><br>
+                                <input type="Fname" placeholder="Fname" id="name"><br>
+                                <label for="Lname">LName</label><br>
+                                <input type="Lname" placeholder="Lname" id="name"><br>
+                                <label for="email">Email</label><br>
+                                <input type="Email" placeholder="email" id="email"><br>
+                                <label for="birthdate">Select your birthdate:</label><br>
+                                <input type="date" id="birthdate" name="birthdate"><br>
+
+                                <label for="meeting-date">Select meeting date:</label><br>
+                                <input type="date" id="meeting-date" name="meeting-date"><br>
+                                <label for="Quantity">Select a quantity</label>
+                                <select id="quantities" name="quantity">
+                                        <option>nil</option>
+                                        <option>sale</option>
+                                        <option>sil</option>
+                                        <option>nile</option>
+                                </select><br>
+                                <lab for="color">Color</lab el>
+                                <input type="color" id="name"><br>
+                                <label for="myfile">Select a file:</label>
+                                <input type="file" id="myfile" name="myfile"><br>
+                                <div class="div-fire">
+                                        <input type="image" src="img2.jpg" alt="img" width="100px" height="100px"><br>
+                                </div>
+                        </fieldset>
+                        <label for="cars">Choose a car:</label>
+                        <select id="cars" name="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat" selected>Fiat</option>
+                                <option value="audi">Audi</option>
+                        </select>
+                        <textarea name="message" rows="10" cols="30">
+                                The cat was playing in the garden.
+                        </textarea>
+                </div>
+                <center>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                </center>
+        </form>
+</body>
+
+</html>
